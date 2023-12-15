@@ -1,0 +1,28 @@
+export_paths:
+  - app/Scopes/PropertyFilters.php
+  - app/Http/Controllers/DynamicToken.php
+  - app/Tags
+  - content
+  - config/statamic/search.php
+  - config/statamic/assets.php
+  - config/statamic/antlers.php
+  - resources/blueprints
+  - resources/fieldsets
+  - resources/forms
+  - resources/css
+  - resources/js
+  - resources/svg
+  - resources/views
+  - public/assets
+  - public/build
+  - public/fonts
+  - public/svg
+  - routes/web.php
+  - package.json
+  - tailwind.config.js
+  - vite.config.js
+  - postcss.config.js
+  - README.md
+dependencies:
+  gehrisandro/tailwind-merge-laravel: ^0.2.1
+  stillat/antlers-components: ^2.0
