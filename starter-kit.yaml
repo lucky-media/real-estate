@@ -5,7 +5,7 @@ export_paths:
   - content
   - config/statamic/search.php
   - config/statamic/assets.php
-  - config/statamic/antlers.php
+  - resources/sites.yaml
   - resources/blueprints
   - resources/fieldsets
   - resources/forms
@@ -24,5 +24,5 @@ export_paths:
   - postcss.config.js
   - README.md
 dependencies:
-  gehrisandro/tailwind-merge-laravel: ^0.2.1
+  gehrisandro/tailwind-merge-laravel: ^v1.2.0
   stillat/antlers-components: ^2.0
