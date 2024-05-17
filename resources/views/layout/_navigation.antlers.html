@@ -8,7 +8,7 @@
     {{ /if }}>
     <nav x-data="{ isOpen: false }" aria-labelledby="nav-heading" :aria-expanded="isOpen"
         class="container flex flex-wrap items-center py-5" :class="{ 'bg-white': isOpen }" @click.away="isOpen = false">
-        
+
         {{# Logo #}}
         <a aria-label="logo" href="/">
             {{ if theme:logo }}
@@ -23,7 +23,12 @@
         {{# Toggle button (hidden on large screens) #}}
         <button :aria-expanded="isOpen" aria-controls="nav-list" aria-label="toggle menu" @click="isOpen = !isOpen"
             type="button" class="block px-2 ml-auto text-dark-900 lg:hidden focus:outline-none">
-            {{ svg src="hamburger-toggle" }}
+            <span x-show.transition="!isOpen">
+                {{ svg src="hamburger-toggle" }}
+            </span>
+            <span x-show="isOpen" x-cloak>
+                {{ svg src="x-toggle" }}
+            </span>
         </button>
 
         {{# Menu #}}
