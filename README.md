@@ -184,7 +184,7 @@ Make use of Laravel Vite for asset compilation:
 * `npm run build` - compiles for production.
 
 ## Commercial Use
-Real Estate is a commercial starter kit - ensure you acquire a license via the Statamic Marketplace before deploying it in your project.
+Real Estate is a commercial starter kit - ensure you acquire a license via the [Statamic Marketplace](https://statamic.com/starter-kits/luckymedia/real-estate) before deploying it in your project.
 
 ## 🐞 Bugs and 💡 Feature Requests
 Please refer to the issues tab to submit a Bug or a Feature Request.
