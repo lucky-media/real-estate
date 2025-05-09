@@ -5,7 +5,7 @@
     'base' => 'font-bold font-heading [&>i]:font-sans [&>i]:font-medium',
     'variants' => [
         'size' => [
-            1 => 'text-5xl md:text-6xl lg:text-7xl leading-[48px] lg:leading-[80px]',
+            1 => 'text-5xl md:text-6xl lg:text-7xl lg:leading-[80px]',
             2 => 'text-4xl md:text-5xl leading-10 md:leading-[56px]',
             3 => 'text-2xl lg:text-3xl leading-10',
             4 => 'text-[28px] leading-10',

@@ -20,7 +20,7 @@
         'ring' => [
             'gray' => 'ring-1 ring-dark-100 hover:ring-brand-950 hover:ring-2',
             'brand' => 'ring-1 ring-brand-100 hover:ring-2 hover:ring-brand-950',
-            'transparent' => 'ring-0 hover:ring-2 hover:border-brand-950',
+            'transparent' => 'ring-0 hover:ring-2 hover:ring-brand-950',
             'none' => 'ring-0'
         ],
     ]

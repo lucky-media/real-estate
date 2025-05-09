@@ -4,7 +4,7 @@
     </div>
     <div>
         <x-heading size="5" class="mb-1">{{ title | truncate(22, '...') }}</x-heading>
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center gap-x-2">
             {{ svg src="house" class="w-6 h-6 stroke-brand-950 shrink-0" }}
             <x-text color="dark" size="lg" class="mt-0.5">
                 {{ total_properties :city="id" }}
