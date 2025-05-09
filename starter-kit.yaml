@@ -19,9 +19,7 @@ export_paths:
   - public/svg
   - routes/web.php
   - package.json
-  - tailwind.config.js
   - vite.config.js
-  - postcss.config.js
   - README.md
 dependencies:
   gehrisandro/tailwind-merge-laravel: ^v1.2.0

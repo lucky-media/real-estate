@@ -19,7 +19,7 @@
         {{# Tab Switcher #}}
         <div class="flex mt-4">
             {{ forms }}
-                <div class="flex items-center w-1/2 py-2 space-x-2 cursor-pointer {{ count > 1 ?= 'justify-center' }}"
+                <div class="flex items-center w-1/2 py-2 gap-x-2 cursor-pointer {{ count > 1 ?= 'justify-center' }}"
                     :class="tab === '{{ form:handle }}' ? 'border-brand-950 border-b-2' : 'border-brand-200 border-b'"
                     x-on:click="tab = '{{ form:handle }}'">
                     {{ svg src="{{ form:handle === 'home_tour' ? 'date' : 'message' }}" class="w-5 h-5 fill-current shrink-0" x-bind:class="tab === '{{ form:handle }}' ? 'text-brand-950' : 'text-dark-600'" }}

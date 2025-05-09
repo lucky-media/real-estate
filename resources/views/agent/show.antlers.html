@@ -2,12 +2,12 @@
 <div class="container pt-14 pb-28">
     <div>
         {{ partial:components/go_back title="Back To Agents" }}
-        <div class="p-6 mt-10 max-lg:space-y-6 max-md:bg-dark-90 rounded-2xl lg:space-x-6 lg:flex">
+        <div class="p-6 mt-10 gap-6 max-md:bg-dark-90 rounded-2xl flex flex-col lg:flex-row">
             <div class="w-auto md:w-[360px] h-[360px] shrink-0 overflow-hidden rounded-2xl bg-brand-100">
                 {{ partial:components/picture cover="true" }}
             </div>
             <div class="w-full">
-                <div class="items-center justify-between max-md:space-y-6 md:flex">
+                <div class="md:items-center justify-between max-md:gap-y-6 flex flex-col md:flex-row">
                     <div>
                         <x-heading size="2" color="gray">
                             {{ title }}
@@ -16,7 +16,7 @@
                             {{ position }}
                         </x-text>
                     </div>
-                    <div class="flex space-x-4">
+                    <div class="flex gap-x-4">
                         {{ social_media }}
                             <a href="{{ name !== 'telephone' && name !== 'email' ?= link }}{{ name == 'telephone' ?= {link | ensure_left('tel:')} }}{{ name == 'email' ?= {link | ensure_left('mailto:')} }}"
                                 {{ if name !== 'telephone' && name !== 'email' }} target="_blank" rel="noopener noreferrer" {{ /if }} aria-label="{{ name }}" class="bg-dark-900 rounded-full p-2">

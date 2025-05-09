@@ -3,7 +3,7 @@
     () => 'bottom-4 left-4'
 )}}
 
-<div class="absolute flex items-center p-2 space-x-2 rounded-lg bg-brand-200 {{ positions }}">
+<div class="absolute flex items-center p-2 gap-x-2 rounded-lg bg-brand-200 {{ positions }}">
     {{ svg :src="property_status === 'sale' ? 'tag' : 'key'" class="w-4 h-4 fill-current shrink-0 text-brand-950" }}
     
     <x-text color="brand" weight="700" size="xs" class="mt-0.5 font-heading">
