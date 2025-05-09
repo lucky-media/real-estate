@@ -8,7 +8,7 @@
             {{ partial:forms/partials/success_state class="mb-8" }}
         {{ /if }}
         
-        <div class="{{ style == 'primary' ? 'grid gap-8 md:grid-cols-12' : 'mt-4 space-y-5' }}">
+        <div class="{{ style == 'primary' ? 'grid gap-8 md:grid-cols-12' : 'mt-4 flex flex-col gap-y-5' }}">
             {{ fields }}
                 <div class="{{ width == '25' ?= 'md:col-span-3' }}
                 {{ width == '33' ?= 'md:col-span-4' }}
