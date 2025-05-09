@@ -28,14 +28,4 @@ class TotalProperties extends Tags
 
         return ($total > 99) ? '100+ properties' : $total . ' ' . Str::plural('property', $total);
     }
-
-    /**
-     * The {{ total_properties:example }} tag.
-     *
-     * @return string|array
-     */
-    public function example()
-    {
-        //
-    }
 }
